@@ -1,6 +1,75 @@
 .header {
-    background: red;
-    height: 15vh;
+    background:#12005F;
+    height: 100px;
     width: 100%;
-    /* position: sticky; */
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/**** logo section ****/
+.logo-section {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section > img {
+    height: 60%;
+}
+
+
+/**** nav bar ****/
+.nav-bar {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.nav-bar >ul > li> h1 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/**** CTA button ****/
+
+.CTA-header {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTA-header-button {
+    background: linear-gradient(45deg, #DD2A7B, #F58529);
+    height: 60%;
+    width: 70%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 1px;
 }

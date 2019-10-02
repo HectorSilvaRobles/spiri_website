@@ -9,21 +9,24 @@ import HWDT from './HowWeDoThings/HWDT'
 import Projects from './Projects/Hp_projects'
 import About from './About/Hp_about'
 import Footer from '../Footer/Footer'
+import './homepage.css'
 
 class Homepage extends Component {
     render() {
         return (
-            <div>
+            <div className='homepage'>
                 <Header />
-                <Herobanner />
-                <Benefit_1 />
-                <Benefit_2 />
-                <Services />
-                <CTA />
-                <HWDT />
-                <Projects />
-                <About />
-                <Footer />
+                <div className='body'>
+                    <Herobanner />
+                    <Benefit_1 />
+                    <Benefit_2 />
+                    <Services />
+                    <CTA />
+                    <HWDT />
+                    <Projects />
+                    <About />
+                    <Footer />
+                </div>
             </div>
         )
     }
