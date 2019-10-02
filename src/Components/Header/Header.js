@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './header.css'
 import logo from '../../Media/LogoText.png'
+import ToggleButton from '../Header/ToggleButton/ToggleButton'
 
 class Header extends Component {
     render(){
@@ -19,6 +20,9 @@ class Header extends Component {
                 </nav>
                 <div className='CTA-header'>
                     <div className='CTA-header-button'>Get Started</div>
+                </div>
+                <div className='togglebutton'>
+                    <ToggleButton click={this.props.drawerClick} />
                 </div>
             </div>
         )

@@ -6,7 +6,15 @@
     z-index: 2;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
+}
+
+.togglebutton {
+    width: 10%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /**** logo section ****/
@@ -72,4 +80,50 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     letter-spacing: 1px;
+}
+
+
+/**** Menu toggle button ****/
+@media screen and (min-width: 900px){
+    .togglebutton {
+        display: none;
+    }
+}
+
+/**** responsive nav-bar ****/
+@media screen and (max-width: 900px){
+    .nav-bar, .CTA-header {
+        display: none;
+    }
+}
+
+/*** small laptop / large tablet ****/
+@media screen and (min-width: 901px) and (max-width: 1250px){
+    .logo-section > img {
+        height: 50%;
+    }
+    .nav-bar {
+        width: 40%;
+    }
+
+    .nav-bar > ul > li >h1 {
+        font-size: 21px;
+    }
+
+    .CTA-header-button {
+        width: 90%;
+        font-size: 21px;
+    }
+}
+
+/**** 4k monitors ****/ 
+
+@media screen and (min-width: 1800px){
+    .header {
+        height: 160px;
+    }
+
+    .nav-bar > ul > li > h1, .CTA-header-button {
+        font-size: 38px;
+    }
 }

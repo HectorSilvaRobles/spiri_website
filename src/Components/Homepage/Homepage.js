@@ -9,13 +9,39 @@ import HWDT from './HowWeDoThings/HWDT'
 import Projects from './Projects/Hp_projects'
 import About from './About/Hp_about'
 import Footer from '../Footer/Footer'
+import Backdrop from '../Header/Backdrop/Backdrop'
+import SideDrawer from '../Header/SideDrawer/SideDrawer'
 import './homepage.css'
 
 class Homepage extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            drawerOpen: false
+        }
+    }
+
+    drawerToggleClick = () => {
+        console.log(this.state)
+        this.setState((prevState) => {
+            return {drawerOpen: !prevState.drawerOpen}
+        })
+    }
+
+    backdropClick = () => {
+        this.setState({drawerOpen: false})
+    }
     render() {
+        let backdrop;
+        if(this.state.drawerOpen){
+            backdrop = <Backdrop click={this.backdropClick} />
+        }
         return (
             <div className='homepage'>
-                <Header />
+                <Header drawerClick={this.drawerToggleClick} />
+                <SideDrawer show={this.state.drawerOpen} />
+                {backdrop}
                 <div className='body'>
                     <Herobanner />
                     <Benefit_1 />
