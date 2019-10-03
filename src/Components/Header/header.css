@@ -97,8 +97,20 @@
     }
 }
 
+/**** Mobile view ****/
+
+@media screen and (max-width: 450px){
+    .logo-section {
+        width: 65%;
+    }
+
+    .togglebutton {
+        width: 30%;
+    }
+}
+
 /*** small laptop / large tablet ****/
-@media screen and (min-width: 901px) and (max-width: 1250px){
+@media screen and (min-width: 901px) and (max-width: 1350px){
     .logo-section > img {
         height: 50%;
     }
