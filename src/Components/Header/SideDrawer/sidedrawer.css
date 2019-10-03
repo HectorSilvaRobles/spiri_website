@@ -87,6 +87,9 @@
 
 /**** Mobile sidedrawer ****/
 @media screen and (max-width: 450px){
+    .drawer {
+        width: 65%;
+    }
     .CTA-sidedrawer {
         height: 150px;
     }
