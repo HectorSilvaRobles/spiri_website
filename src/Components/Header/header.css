@@ -84,14 +84,14 @@
 
 
 /**** Menu toggle button ****/
-@media screen and (min-width: 900px){
+@media screen and (min-width: 950px){
     .togglebutton {
         display: none;
     }
 }
 
 /**** responsive nav-bar ****/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
     .nav-bar, .CTA-header {
         display: none;
     }

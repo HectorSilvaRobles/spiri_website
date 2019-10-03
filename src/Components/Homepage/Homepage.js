@@ -51,8 +51,9 @@ class Homepage extends Component {
                     <HWDT />
                     <Projects />
                     <About />
-                    <Footer />
+                    
                 </div>
+                <Footer />
             </div>
         )
     }

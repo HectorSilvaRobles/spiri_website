@@ -1,5 +1,112 @@
 .cta {
-    height: 25vh;
+    height: 27vh;
     width: 100%;
-    background: pink;
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-wording {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.cta-wording > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.cta-button {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.cta-button-button {
+    background: linear-gradient(90deg, #1488CC, #2B32B2);
+    border: none;
+    height: 50%;
+    width: 90%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+/**** Mobile View ****/ 
+@media screen and (max-width: 500px){
+    .cta {
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    .cta-wording, .cta-button {
+        width: 95%;
+        height: 35%;
+        margin: 0;
+    }
+
+    .cta-button-button {
+        height: 60%;
+    }
+
+    .cta-wording > h1 {
+        text-align: center;
+    }
+}
+
+/**** Tablet View ****/ 
+@media screen and (max-width: 950px) and (min-width: 501px){
+    .cta-wording {
+        widtH: 50%;
+    }
+
+    .cta-wording > h1 {
+        font-size: 45px;
+    }
+    .cta-button {
+        width: 30%;
+    }
+}
+
+
+/*** Small Laptop and Large Tablet ***/
+
+@media screen and (max-width: 1300px) and (min-width: 951px){
+    .cta-wording {
+        width: 45%;
+    }
+
+    .cta-button {
+        width: 30%;
+    }
+
+}
+
+/*** 4k Screens ***/ 
+@media screen and (min-width: 1800px){
+    .cta-wording > h1 {
+        font-size: 80px;
+    }
+    .cta-button {
+        width: 25%;
+    }
+
+    .cta-button-button{ 
+        font-size: 50px;
+    }
 }
