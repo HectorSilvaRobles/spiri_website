@@ -1,5 +1,22 @@
 
 .body {
     position: relative;
-    top: 100px;
+    top: 80px;
+}
+
+.spacer {
+    margin-top: -50px;
+    margin-left: -50px;
+    height: 110px;
+    width: 110%;
+    background: white;
+    border-radius: 100%;
+    transform: rotateX(190deg)
+}
+
+@media screen and (max-width: 950px){
+    .spacer {
+        width: 130%;
+        height: 90px;
+    }
 }
