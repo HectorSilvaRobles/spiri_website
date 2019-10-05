@@ -1,5 +1,5 @@
 .benefit {
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .underline_1 {
-    height: 10%;
+    height: 15px;
     border-radius: 100px;
     width: 40%;
     background: linear-gradient(45deg, #43C6AC, #191654);

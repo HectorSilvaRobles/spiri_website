@@ -44,6 +44,7 @@ class Homepage extends Component {
                 {backdrop}
                 <div className='body'>
                     <Herobanner />
+                    <div className='spacer'></div>
                     <Benefit_1 />
                     <Benefit_2 />
                     <Services />
