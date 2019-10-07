@@ -39,6 +39,7 @@
     height: 15px;
     border-radius: 100px;
     width: 40%;
+    margin: 10px 0;
     background: linear-gradient(45deg, #43C6AC, #191654);
 }
 
