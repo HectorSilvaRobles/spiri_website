@@ -1,5 +1,80 @@
 .hwdt {
-    height: 80vh;
+    height: 115vh;
     width: 100%;
-    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hwdt-header {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hwdt-header > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hwdt-div {
+    background: white;
+    box-shadow: 1px 1px 20px 0px black;
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hwdt-div-top {
+    background: red;
+    height: 42.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hwdt-div-bottom {
+    background: blue;
+    height: 42.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hwdt-card {
+    height: 80%;
+    width: 28%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hwdt-card-image {
+    height: 120px;
+    width: 120px;
+    border: solid black 5px;
+    border-radius: 100%;
+}
+
+
+/*** Mobile View ***/
+@media screen and (max-width: 550px){
+    .hwdt {
+        height: 200vh;
+    }
+    .hwdt-div {
+        height: 90%;
+        width: 95%;
+    }
 }
